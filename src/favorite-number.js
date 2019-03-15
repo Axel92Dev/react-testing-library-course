@@ -3,9 +3,11 @@ import React from 'react';
 export class FavoriteNumber extends React.Component {
   static defaultProps = { min: 1, max: 9 };
   state = { number: 0, numberEntered: false };
+
   handleChange = event => {
     this.setState({ numberEntered: true, number: Number(event.target.value) });
   };
+
   render() {
     const { number, numberEntered } = this.state;
     const { min, max } = this.props;
