@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "./node_modules/kcd-scripts/eslint.js",
+    "./node_modules/eslint-config-prettier/index.js",
+    "./node_modules/eslint-config-prettier/react.js",
+  ],
+  "rules": {
+    "semi": "warn",
+    "import/prefer-default-export": "off",
+    "jsx-a11y/label-has-for": "off",
+    "react/prop-types": "off",
+    "import/no-unassigned-import": "off",
+    "no-console": "off",
+    "jsx-a11y/accessible-emoji": "off",
+    "jest/no-disabled-tests": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 120,
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+      }
+    ]
+  },
+  "plugins": ["prettier"]
+}

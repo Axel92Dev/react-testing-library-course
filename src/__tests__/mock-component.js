@@ -1,6 +1,6 @@
 // these should normally be in your jest setupTestFrameworkScriptFile
-import 'jest-dom/extend-expect'
-import 'react-testing-library/cleanup-after-each'
+import 'jest-dom/extend-expect';
+import 'react-testing-library/cleanup-after-each';
 
 // 0⃣ 🐨 you'll need these:
 // import React from 'react'
@@ -39,7 +39,7 @@ test('shows hidden message when toggle is clicked', () => {
   // 6⃣ 🐨 click on the button again
   //
   // 8⃣ 🐨 assert that your message is not in the docuemnt anymore
-})
+});
 
 //////// Elaboration & Feedback /////////
 // When you've finished with the exercises:
@@ -51,7 +51,7 @@ test('shows hidden message when toggle is clicked', () => {
 http://ws.kcd.im/?ws=react-testing-library-course&e=mock-component&em=
 */
 test.skip('I submitted my elaboration and feedback', () => {
-  const submitted = false // change this when you've submitted!
-  expect(submitted).toBe(true)
-})
+  const submitted = false; // change this when you've submitted!
+  expect(submitted).toBe(true);
+});
 ////////////////////////////////

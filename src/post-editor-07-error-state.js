@@ -1,28 +1,28 @@
-import React from 'react'
-import {Redirect} from 'react-router'
-import {savePost} from './api'
+import React from 'react';
+import { Redirect } from 'react-router';
+import { savePost } from './api';
 
 class Editor extends React.Component {
-  state = {isSaving: false, redirect: false, error: null}
+  state = { isSaving: false, redirect: false, error: null };
   handleSubmit = e => {
-    e.preventDefault()
-    const {title, content, tags} = e.target.elements
+    e.preventDefault();
+    const { title, content, tags } = e.target.elements;
     const newPost = {
       title: title.value,
       content: content.value,
       tags: tags.value.split(',').map(t => t.trim()),
       date: new Date().toISOString(),
       authorId: this.props.user.id,
-    }
-    this.setState({isSaving: true})
+    };
+    this.setState({ isSaving: true });
     savePost(newPost).then(
-      () => this.setState({redirect: true}),
-      response => this.setState({isSaving: false, error: response.data.error}),
-    )
-  }
+      () => this.setState({ redirect: true }),
+      response => this.setState({ isSaving: false, error: response.data.error }),
+    );
+  };
   render() {
     if (this.state.redirect) {
-      return <Redirect to="/" />
+      return <Redirect to="/" />;
     }
     return (
       <form onSubmit={this.handleSubmit}>
@@ -38,12 +38,10 @@ class Editor extends React.Component {
         <button type="submit" disabled={this.state.isSaving}>
           Submit
         </button>
-        {this.state.error ? (
-          <div data-testid="post-error">{this.state.error}</div>
-        ) : null}
+        {this.state.error ? <div data-testid="post-error">{this.state.error}</div> : null}
       </form>
-    )
+    );
   }
 }
 
-export {Editor}
+export { Editor };

@@ -1,20 +1,20 @@
-import React from 'react'
-import {savePost} from './api'
+import React from 'react';
+import { savePost } from './api';
 
 class Editor extends React.Component {
-  state = {isSaving: false}
+  state = { isSaving: false };
   handleSubmit = e => {
-    e.preventDefault()
-    const {title, content, tags} = e.target.elements
+    e.preventDefault();
+    const { title, content, tags } = e.target.elements;
     const newPost = {
       title: title.value,
       content: content.value,
       tags: tags.value.split(',').map(t => t.trim()),
       authorId: this.props.user.id,
-    }
-    this.setState({isSaving: true})
-    savePost(newPost)
-  }
+    };
+    this.setState({ isSaving: true });
+    savePost(newPost);
+  };
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
@@ -31,8 +31,8 @@ class Editor extends React.Component {
           Submit
         </button>
       </form>
-    )
+    );
   }
 }
 
-export {Editor}
+export { Editor };

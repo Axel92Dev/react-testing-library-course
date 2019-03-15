@@ -7,8 +7,8 @@
   "scripts": {
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "lint": "kcd-scripts lint",
-    "precommit": "kcd-scripts precommit",
+    "lint": "eslint --fix .",
+    "precommit": "npm run lint && git add .",
     "validate": "kcd-scripts validate",
     "preinstall": "node ./scripts/verify",
     "postinstall": "npm run validate --silent"
@@ -32,11 +32,15 @@
     "redux": "^4.0.0"
   },
   "devDependencies": {
+    "@types/enzyme": "^3.9.0",
+    "@types/jest": "^24.0.11",
     "babel-core": "^7.0.0-bridge.0",
     "cross-spawn": "^6.0.5",
     "dom-testing-library": "^3.5.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
     "inquirer": "^6.2.0",
     "is-ci": "^1.2.1",
     "jest": "^23.1.0",
@@ -50,34 +54,6 @@
     "presets": [
       "kcd-scripts/babel"
     ]
-  },
-  "eslintConfig": {
-    "extends": "./node_modules/kcd-scripts/eslint.js",
-    "rules": {
-      "semi": "warn",
-      "import/prefer-default-export": "off",
-      "jsx-a11y/label-has-for": "off",
-      "react/prop-types": "off",
-      "import/no-unassigned-import": "off",
-      "no-console": "off",
-      "jsx-a11y/accessible-emoji": "off",
-      "jest/no-disabled-tests": "off"
-    }
-  },
-  "eslintIgnore": [
-    "node_modules",
-    "coverage",
-    "scripts"
-  ],
-  "prettier": {
-    "printWidth": 80,
-    "tabWidth": 2,
-    "useTabs": false,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "all",
-    "bracketSpacing": false,
-    "jsxBracketSameLine": false
   },
   "repository": {
     "type": "git",

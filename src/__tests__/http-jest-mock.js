@@ -1,6 +1,6 @@
 // these should normally be in your jest setupTestFrameworkScriptFile
-import 'jest-dom/extend-expect'
-import 'react-testing-library/cleanup-after-each'
+import 'jest-dom/extend-expect';
+import 'react-testing-library/cleanup-after-each';
 
 // 0⃣ 🐨 you're going to need these
 // import React from 'react'
@@ -29,7 +29,7 @@ test('loads greetings on click', async () => {
   // 6⃣ 🐨 use react-testing-library's `wait` utility to wait until the `greeting`
   // node has the correct text content.
   // 📖 https://github.com/kentcdodds/react-testing-library/blob/b18ff5b96210a887e784b9f53bd886e11b6ed5e0/README.md#wait
-})
+});
 
 //////// Elaboration & Feedback /////////
 // When you've finished with the exercises:
@@ -41,7 +41,7 @@ test('loads greetings on click', async () => {
 http://ws.kcd.im/?ws=react-testing-library-course&e=http-jest-mock&em=
 */
 test.skip('I submitted my elaboration and feedback', () => {
-  const submitted = false // change this when you've submitted!
-  expect(submitted).toBe(true)
-})
+  const submitted = false; // change this when you've submitted!
+  expect(submitted).toBe(true);
+});
 ////////////////////////////////

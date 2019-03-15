@@ -1,11 +1,9 @@
-import React from 'react'
-import {Switch, Route, Link} from 'react-router-dom'
+import React from 'react';
+import { Switch, Route, Link } from 'react-router-dom';
 
-const About = () => (
-  <div data-testid="about-screen">You are on the about page</div>
-)
-const Home = () => <div data-testid="home-screen">You are home</div>
-const NoMatch = () => <div data-testid="no-match-screen">No match</div>
+const About = () => <div data-testid="about-screen">You are on the about page</div>;
+const Home = () => <div data-testid="home-screen">You are home</div>;
+const NoMatch = () => <div data-testid="no-match-screen">No match</div>;
 
 function Main() {
   return (
@@ -18,7 +16,7 @@ function Main() {
         <Route component={NoMatch} />
       </Switch>
     </div>
-  )
+  );
 }
 
-export {Main}
+export { Main };

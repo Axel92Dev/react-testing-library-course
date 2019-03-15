@@ -8,4 +8,4 @@ test('renders a number input with a label "Favorite Number"', () => {
   // 🐨 render the FavoriteNumber component to that div with ReactDOM.render
   // 🐨 assert the input type attribute is a number
   //:🐨 assert the label's text content is "Favorite Number"
-})
+});

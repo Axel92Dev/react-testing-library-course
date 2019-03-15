@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 class Editor extends React.Component {
-  state = {isSaving: false}
+  state = { isSaving: false };
   handleSubmit = e => {
-    e.preventDefault()
-    this.setState({isSaving: true})
-  }
+    e.preventDefault();
+    this.setState({ isSaving: true });
+  };
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
@@ -22,8 +22,8 @@ class Editor extends React.Component {
           Submit
         </button>
       </form>
-    )
+    );
   }
 }
 
-export {Editor}
+export { Editor };

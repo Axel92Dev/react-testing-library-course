@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 class Editor extends React.Component {
   render() {
@@ -15,8 +15,8 @@ class Editor extends React.Component {
 
         <button type="submit">Submit</button>
       </form>
-    )
+    );
   }
 }
 
-export {Editor}
+export { Editor };

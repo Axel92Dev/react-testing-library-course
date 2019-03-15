@@ -1,6 +1,6 @@
 // these should normally be in your jest setupTestFrameworkScriptFile
-import 'jest-dom/extend-expect'
-import 'react-testing-library/cleanup-after-each'
+import 'jest-dom/extend-expect';
+import 'react-testing-library/cleanup-after-each';
 
 // 0⃣ 🐨 you're gonna need these
 // import React from 'react'
@@ -33,4 +33,4 @@ test('does not attempt to set state when unmounted (to prevent memory leaks)', (
   // 7⃣ 🐨 Make an assertion that console.error was not called
   // (then, you can test that it worked by removing the componentWillUnMount in
   // the countdown component)
-})
+});
