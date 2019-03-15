@@ -10,7 +10,7 @@
     "lint": "kcd-scripts lint",
     "precommit": "kcd-scripts precommit",
     "validate": "kcd-scripts validate",
-    "setup": "node ./scripts/verify && node ./scripts/install && npm run validate --silent && node ./scripts/autofill-feedback-email"
+    "setup": "node ./scripts/verify && node ./scripts/install && npm run validate --silent"
   },
   "keywords": [],
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
@@ -77,10 +77,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kentcdodds/react-testing-library-course.git"
+    "url": "git+https://github.com/Axel92Dev/react-testing-library-course.git"
   },
-  "bugs": {
-    "url": "https://github.com/kentcdodds/react-testing-library-course/issues"
-  },
-  "homepage": "https://github.com/kentcdodds/react-testing-library-course#readme"
+  "homepage": "https://github.com/Axel92Dev/react-testing-library-course#readme"
 }

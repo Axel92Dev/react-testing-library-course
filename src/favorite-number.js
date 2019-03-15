@@ -1,6 +1,6 @@
 import React from 'react'
 
-class FavoriteNumber extends React.Component {
+export class FavoriteNumber extends React.Component {
   static defaultProps = {min: 1, max: 9}
   state = {number: 0, numberEntered: false}
   handleChange = event => {
@@ -26,5 +26,3 @@ class FavoriteNumber extends React.Component {
     )
   }
 }
-
-export {FavoriteNumber}

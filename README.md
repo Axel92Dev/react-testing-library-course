@@ -1,13 +1,15 @@
-# react-testing-library-course
-
-_Course material for testing React components using react-testing-library_
-
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+- [react-testing-library-course](#react-testing-library-course)
+  - [Pre-requisites:](#pre-requisites)
+  - [System Requirements:](#system-requirements)
+  - [Setup:](#setup)
+  - [License](#license)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-<small>I'm still working on the README... sorry...</small>
+# react-testing-library-course
 
 We're going to be learning how to write tests with React and
 [react-testing-library](https://github.com/kentcdodds/react-testing-library).
@@ -27,14 +29,10 @@ You'll need git and node@>=8 installed.
 Run these commands in your terminal to get yourself setup:
 
 ```
-git clone https://github.com/kentcdodds/react-testing-library-course.git --branch workshop-2018-09
+git clone https://github.com/Axel92Dev/react-testing-library-course
 cd react-testing-library-course/
 npm run setup
 ```
-
-Please answer the prompt about your email. That should get you all setup.
-If you have issues I can help you work through them while everyone else is
-working on exercises.
 
 ## License
 
