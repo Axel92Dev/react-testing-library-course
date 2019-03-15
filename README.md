@@ -23,6 +23,8 @@ Prior testing experience is not necessary.
 ## System Requirements:
 
 You'll need git and node@>=8 installed.
+Install it with [NVM|https://github.com/creationix/nvm]
+Then `nvm install v10`
 
 ## Setup:
 
