@@ -31,7 +31,7 @@ Run these commands in your terminal to get yourself setup:
 ```
 git clone https://github.com/Axel92Dev/react-testing-library-course
 cd react-testing-library-course/
-npm run setup
+npm install
 ```
 
 ## License

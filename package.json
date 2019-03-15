@@ -10,7 +10,8 @@
     "lint": "kcd-scripts lint",
     "precommit": "kcd-scripts precommit",
     "validate": "kcd-scripts validate",
-    "setup": "node ./scripts/verify && node ./scripts/install && npm run validate --silent"
+    "preinstall": "node ./scripts/verify",
+    "postinstall": "npm run validate --silent"
   },
   "keywords": [],
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
