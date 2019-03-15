@@ -52,6 +52,7 @@
   "eslintConfig": {
     "extends": "./node_modules/kcd-scripts/eslint.js",
     "rules": {
+      "semi": "warn",
       "import/prefer-default-export": "off",
       "jsx-a11y/label-has-for": "off",
       "react/prop-types": "off",
@@ -70,7 +71,7 @@
     "printWidth": 80,
     "tabWidth": 2,
     "useTabs": false,
-    "semi": false,
+    "semi": true,
     "singleQuote": true,
     "trailingComma": "all",
     "bracketSpacing": false,
